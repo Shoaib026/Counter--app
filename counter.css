@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#phone::before{
+    position: absolute;
+    content: "";
+    height: 10vh;
+    width: 1.2vh;
+    background: rgb(28, 28, 28);
+    left: -4vh;
+    top: 10vh;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:11px ;
+    z-index: 1;
+
+}
+
+#phone::after{
+
+    z-index: 1;
+    position: absolute;
+    content: "";
+    height: 7vh;
+    width: 1vh;
+  background: rgb(28, 28, 28);
+    right: -3.5vh;
+    top: 10vh;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:11px ;
+}
+
+#phone{
+    box-shadow:  15px 25px 10px #666666,
+    -30px 30px 61px #ffffff;
+    position: relative;
+    border-radius: 25px;
+    height: 500px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    background: rgb(141, 140, 140);
+    border: 17px solid #000000;
+    cursor: pointer;
+}
+
+.notch{
+
+    position: absolute;
+    background: #000;
+    height: 3vh;
+    width: 20vh;
+    border-radius: 10px;
+
+}
+
+h1{
+    font-size: 50px;
+}
+
+#counter-container{
+    font-size: larger;
+    height: 0px;
+    width: 250px;
+
+}
+button {
+    height: 10vh;
+    width: 10vh;
+    margin: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius:  50%;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#btn-1{
+    background-color: rgb(0, 255, 0);
+}
+
+#btn-2{
+    background-color: rgb(255, 5, 5);
+}
